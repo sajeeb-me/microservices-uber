@@ -5,7 +5,7 @@ function connectDB() {
     //     useNewUrlParser: true,
     //     useUnifiedTopology: true,
     // })
-    mongoose.connect(process.env.MONGO_URL)
+    mongoose.connect(process.env.MONGO_URI)
         .then(() => {
             console.log('MongoDB connected successfully');
         })
